@@ -492,9 +492,7 @@ color: black;
       height: unset;
       flex-wrap: unset;
   }
-.MyName {
-  font-size: 20px;
-}
+
   .myPhoto {
       text-align: center;
   }
