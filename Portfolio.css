@@ -481,76 +481,8 @@ color: black;
   width: fit-content;
   height: 80%;
 }
-/* RESPONSIVE */
-/* @media (max-width: 426px) {
-    .nav-link {
-        font-size: 14px;
-        margin: 10px;
-    }
-    .a1  {
-width: 50px;
-height: 50px;    }
-    .navbar-brand img {
-        width: 80px;
-        height: 60px;
-    }
-    .myphoto {
-      margin-left: 35px;
-      height: 400px ;
-      margin-top: 30px;
-    }
-    .GeneralSection {
-        margin-top: 15%;
-        height: auto;
-    }
-.MyInfo {
-  justify-content: center;
-  align-items: center;
-   margin-left: 46px;
-}
-    .MyInfo h1 {
-        font-size: 40px;
-        text-align: center;
-    }
 
-    .MyInfo h2 {
-        font-size: 30px;
-        text-align: center;
-
-    }
-
-    .quote p {
-        font-size: 14px;
-        text-align: center;
-
-    }
-
-    .animated-section {
-        flex-direction: column;
-    }
-
-    .animated-section .a2 p {
-        font-size: 1em;
-    }
-
-    .Experience {
-        grid-template-columns: 1fr;
-    }
-
-    .Experience div {
-        text-align: center;
-    }
-
-    .sidebar1, .sidebar2, .sidebar3, .sidebar4, .sidebar5, .sidebar6, .sidebar7 {
-        width: 100%;
-    }
-
-    .content, .sub-content, .thirdcontent, .fourthcontent, .fifthcontent, .sixthcontent, .seventhcontent {
-        width: 100%;
-    }
-} */
-
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 426px) {
   .fixed-top {
       position: fixed;
   }
@@ -560,7 +492,9 @@ height: 50px;    }
       height: unset;
       flex-wrap: unset;
   }
-
+.MyInfo {
+  font-size: small;
+}
   .myPhoto {
       text-align: center;
   }
@@ -596,7 +530,7 @@ height: 50px;    }
     }
 
     .animated-section .a2 p {
-        font-size: 1.2em; /* Increase the font size if needed */
+        font-size: 1.2em;
         padding: 20px;
     }
     .Experience {
