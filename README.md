@@ -1,2 +1,2 @@
 # Portfolio-Project
-My first project at Orange Coding Academy is the Portfolio Using HTML,CSS, and Bootstrap. It includes my experience, projects, skills and education.
+My first project at Orange Coding Academy is the Portfolio Using HTML,CSS, and Bootstrap. It includes my experience, projects, skills and education. It features a responsive design with a clean, modern aesthetic. By utilizing Bootstrap's grid system and components, I've built a user-friendly and adaptive site that highlights my ability to deliver professional and polished web experiences across various devices.
