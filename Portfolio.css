@@ -1,78 +1,58 @@
 body {font-family: "Courier New", monospace; background-color: rgb(138, 67, 96); color: aliceblue; }
-/* --------------------------------------------------------------------------------------------------------- */
-/* Navbar */
-/* --------------------------------------------------------------------------------------------------------- */
+/* --------------------Navbar---------------------- */
 .navbar-custom {background-color: rgb(138, 67, 96); font-family: "Courier New", monospace; color: rgb(217, 223, 227);}
 .nav-link {color: rgb(217, 223, 227); margin: 20px;}
 .navbar-custom .nav-item .nav-link {font-size: 18px;}
-/* --------------------------------------------------------------------------------------------------------- */
-/* General Section */
-/* --------------------------------------------------------------------------------------------------------- */
+/* ------------------------General Section---------------------------- */
 .myphoto { margin-left: 15px; width: 60vb; height: 85vh; display: inline; }
-
 .GeneralSection {
   display: flex; background-color: rgb(138, 67, 96); flex-direction: column;
   margin-top: 9%; width: 90%; height: 90vh; flex-wrap: wrap; }
-
 .MyInfo {
   display: flex; flex-direction: column; justify-content: center; align-self: flex-start;align-items: center; height: 100%;
 }
 .quote { margin-top: 10px; color: black; }
-
 @keyframes slideIn {
   from {transform: translateY(100%); opacity: 0;}
   to { transform: translateY(0); opacity: 1; }
 }
-/* --------------------------------------------------------------------------------------------------------- */
-/* About Section */
-/* --------------------------------------------------------------------------------------------------------- */
-
+/* -----------------About Section-------------------- */
 .a1 {
   display: flex; position: relative; border-radius: 50%;width: 40%; height: 50%; margin: auto; object-fit: cover;
 }
-
 .a2 {
   margin-top: 10px; margin-left: 20px; width: 60%;margin: auto;
 }
-
-.a2:after {
+.a2 ::after {
   content: ''; width: 20px; height: 2px; background: black; opacity: 0; display: inline-block; animation: blink 1s linear infinite alternate;
 }
 @keyframes blink {
   50% {opacity: 0;}
   100% {opacity: 1;}
 }
-
 .animated-section {
   width: 90%; height: 50vh; display: flex;
   background-color: rgb(163, 172, 172); animation: slideIn 2s ease-in-out; flex-direction: row;
   position: relative; margin: auto; border: 1px solid rgb(163, 172, 172); border-radius: 30%;
   justify-content: center; align-items: center;
 }
-
 .animated-section .a1 {
   display: flex; justify-content: center; align-items: center; width: 15%; height: 70%; margin: auto;
   overflow: hidden;border-radius: 50%;
 }
-
 .animated-section .a1 img {
   width: 100%; height: 100%; object-fit: cover; border-radius: 50%;
 }
-
 .animated-section .a2 {
   display: flex; justify-content: center; align-items: center; width: 80%; height: 100%; text-align: center;
 }
-
 .animated-section .a2 p {
   font-size: 1.5em; margin: 0; color: black;
 }
-
 .space {
   margin-top: 20px; margin-bottom: 20px;
 }
-/* --------------------------------------------------------------------------------------------------------- */
-/* Experience Section */
-/* --------------------------------------------------------------------------------------------------------- */
+/* ----------------------Experience Section------------------------ */
 .Experience {
   display: grid;
   grid-template-columns: 30% 70%;
@@ -94,8 +74,6 @@ body {font-family: "Courier New", monospace; background-color: rgb(138, 67, 96);
 .education {
   display: grid;
   grid-template-columns: 30% 70%;
-  
- 
   width: 90vw;
   gap: 10px;
   padding: 10px;
@@ -131,8 +109,6 @@ body {font-family: "Courier New", monospace; background-color: rgb(138, 67, 96);
 .sixthcontent { grid-area: sixthcontent; }
 .sidebar7 { grid-area: sidebar7; }
 .seventhcontent { grid-area: seventhcontent; } 
-
-
 .sidebar {
   padding: 20px;
   display: flex;
@@ -156,7 +132,6 @@ header img {
 .sidebar1 , .sidebar2 , .sidebar3 , .sidebar4 , .sidebar6, .sidebar7 {
   display: grid;
   color: black;
-  grid-area: sidebar1;
   padding-top: 80px;
   font-size: large;
   margin-bottom: 20px;
@@ -165,96 +140,21 @@ header img {
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 20%;
   padding-bottom: 80px;
-  font-weight: bold;
-}
-.sidebar1 {
-  display: grid;
-  grid-area: sidebar1;
-  padding-top: 80px;
-  font-size: large;
-  margin-bottom: 20px;
-  background-image: url("back.png");
-  background-position: 80%;
-  background-color: rgba(255, 255, 255, 0.9);
-  display: grid;
-  border-radius: 20%;
-  padding-bottom: 80px;
-  font-weight: bold;
-
-
-}
-
-.sidebar2 {
-  grid-area: sidebar2;
-  padding-top: 120px;
-  font-size: large;
-  margin-bottom: 20px;
-  background-image: url("back.png");
-  background-position: 100%;
-  background-color: rgba(255, 255, 255, 0.9);
-  display: grid;
-  border-radius: 20%;
-  font-weight: bold;
-  padding-bottom: 80px;
-}
-
-.sidebar3 {
-  grid-area: sidebar3;
-  padding-top: 70px;
-  display: grid;
-  font-weight: bold;
-  border-radius: 20%;
-  padding-bottom: 80px;
-  font-size: large;
-  margin-bottom: 20px;
-  background-image: url("back.png");
-  background-position: 100%;
-  background-color: rgba(255, 255, 255, 0.9);
-}
-
-.sidebar4 {
-  grid-area: sidebar4;
-  padding-top: 70px;
-  font-size: large;
-  margin-bottom: 20px;
-  background-image: url("back.png");
-  background-position: 100%;
-  background-color: rgba(255, 255, 255, 0.9);
-  display: grid;
-  border-radius: 20%;
-  padding-bottom: 80px;
-  font-weight: bold;
-
+   font-weight: bold;
 }
 .sidebar5 {
   grid-column: 1 / span 2;
   display: flex;
   justify-content: center;
-
 }
 .sidebar6 {
   grid-area: sidebar6;
   padding-top: 120px;
-  font-size: large;
   margin-bottom: 20px;
-  background-image: url("back.png");
   background-position: 100%;
   display: grid;
-
   background-color: rgba(255, 255, 255, 0.9);
 }
-.sidebar7 {
-  grid-area: sidebar7;
-  padding-top: 120px;
-  font-size: large;
-  margin-bottom: 20px;
-  background-image: url("back.png");
-  background-position: 100%;
-  background-color: rgba(255, 255, 255, 0.9);
-  display: grid;
-
-}
-
 .med {
   font-size: large;
   font-weight: bold;
@@ -262,77 +162,27 @@ header img {
   margin-top: 20px;
   margin-left: 20px;
 }
-
 .content {
   grid-area: content;
   padding: 20px;
   border-radius: 5px;
   display: grid;
-
   box-shadow: 0 2px 1px rgba(1, 1, 1, 0.5);
 }
-
 .sub-content {
   display: grid;
   grid-template-rows: 1fr 1fr;
   gap: 10px;
   display: grid;
-
   height: 100%;
   box-shadow: 0 2px 1px rgba(1, 1, 1, 0.5);
 }
-
-.sub-content-1 {
+.sub-content-1 , .sub-content-2 , .thirdcontent ,.seventhcontent, .fourthcontent , .fifthcontent , .sixthcontent {
   padding: 20px;
   border-radius: 5px;
   display: grid;
-
 }
-
-.sub-content-2 {
-  padding: 20px;
-  display: grid;
-
-  border-radius: 5px;
-}
-
-.thirdcontent {
-  display: grid;
-
-  grid-area: thirdcontent;
-  padding: 20px;
-
-  border-radius: 5px;
-  box-shadow: 0 2px 1px rgba(1, 1, 1, 0.5);
-}
-
-.fourthcontent {
-  display: grid;
-  grid-area: fourthcontent;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 2px 1px rgba(1, 1, 1, 0.5);
-}
-.fifthcontent {
-  display: grid;
-  grid-area: fifthcontent;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 2px 1px rgba(1, 1, 1, 0.5);
-}.sixthcontent {
-  display: grid;
-  grid-area: sixthcontent;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 2px 1px rgba(1, 1, 1, 0.5);
-
-}.seventhcontent {
-  display: grid;
-
-  grid-area: seventhcontent;
-  padding: 20px;
-
-  border-radius: 5px;
+.thirdcontent , .fourthcontent , .fifthcontent , .sixthcontent , .seventhcontent{
   box-shadow: 0 2px 1px rgba(1, 1, 1, 0.5);
 }
 .header {
@@ -340,10 +190,7 @@ header img {
   display: flex;
   justify-content: center;
 }
-
-/* --------------------------------------------------------------------------------------------------------- */
-/* volunteering */
-/* --------------------------------------------------------------------------------------------------------- */
+/* --------------------volunteering--------------------- */
 .Volunteering {display: flex;  padding: 10%;color:black;}
 .Volunteering-container {
   display: flex;
@@ -365,9 +212,7 @@ header img {
 .vol-images {background-color: aliceblue; width: 100%; height: 40%;}
 .vol-images-sos {width: 100%; height:60%;}
 .vol-images-hult { width: 100%; height:60%; padding: 10%;}
-/* --------------------------------------------------------------------------------------------------------- */
-/* Skills Section */
-/* --------------------------------------------------------------------------------------------------------- */
+/* ------------------Skills Section--------------------------- */
 .skills {display: flex;  padding: 10%;color:black;}
 .skills-container {
   display: flex;
@@ -388,7 +233,6 @@ header img {
   flex-direction: row;
   height: 25%;
   animation: slideIn 2s ease-in-out;
-
 }
 .skills-sections img {
   border-radius: 90%;
@@ -396,9 +240,7 @@ header img {
     gap: 20px;
     height: 70%;
 }
-/* --------------------------------------------------------------------------------------------------------- */
-/* Projects Section */
-/* --------------------------------------------------------------------------------------------------------- */
+/* ----------------------Projects Section-------------------------- */
 .Projects {display: flex;  padding: 10%;color:black;}
 .Projects-container {
   display: flex;
@@ -434,9 +276,7 @@ header img {
 }
 .button:hover {
   background-color: rgb(80, 39, 56);}
-/* --------------------------------------------------------------------------------------------------------- */
-/* Contact Section */
-/* --------------------------------------------------------------------------------------------------------- */
+/*--------------------------- Contact Section ----------------*/
 .Contact {display: flex;  padding: 10%;color:black;}
 .Contact-container {
   display: flex;
@@ -458,9 +298,7 @@ header img {
 .Contact-sections img {background-color: rgb(138, 67, 96); width: 100%; height: 40%;}
 .Contact-sections img :hover {
   background-color: rgb(80, 39, 56);}
-/* --------------------------------------------------------------------------------------------------------- */
-/* footer Section */
-/* --------------------------------------------------------------------------------------------------------- */
+/*----------------------- footer Section------------------------- */
 .test_footer {
   background-color: #EEEEEE;
   width: 100% !important;
@@ -476,130 +314,40 @@ header img {
 }
 .footer-sections {
   display: flex;
-color: black;
+  color: black;
   font-size: 15px;
   width: fit-content;
   height: 80%;
 }
-
 @media only screen and (max-width: 426px) {
-  .fixed-top {
-      position: fixed;
-  }
-
-  .GeneralSection {
-      width: unset;
-      height: unset;
-      flex-wrap: unset;
-  }
-
-  .myPhoto {
-      text-align: center;
-  }
-
-  .myphoto {
-      width: 200px;
-      height: 283px;
-      margin-top: 80px;
-  }
-
-      .animated-section {
-        width: 95%;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .animated-section .a1 {
-        position: static;
-        width: 100%;
-        height: auto;
-    }
-
-    .animated-section .a1 img {
-        width: 100%;
-        height: auto;
-        border: 1px solid rgb(163, 172, 172);
-        border-radius: 40%;
-    }
-
-    .animated-section .a2 {
-        width: 100%;
-    }
-
-    .animated-section .a2 p {
-        font-size: 1.2em;
-        padding: 20px;
-    }
-    .Experience {
-      display: flex;
-      flex-direction: column;
-    }
-      .sidebar1 center p{
-          margin-top: unset;
-      }
-    
-      .sidebar2 {
-          font-size: medium;
-      }
-      .sidebar3 {
-          font-size: medium;
-      }
-      .sidebar4 {
-          font-size: medium;
-      }
-    
-      .sidebar6 {
-          font-size: medium;
-      }
-      .button {
-           padding: unset;
-           font-size: unset;
-      }
-      .Volunteering-container {
-          font-size: 20px;
-          display: flex;
-          flex-direction: column;
-      }
-      .Volunteering-container * {
-          font-size: inherit !important;
-      }
-      .Volunteering-sections {
-        width: 80%;
-      }
-      .skills-container {
-        display: flex;
-        flex-wrap: wrap;
-      }
-    .skills-sections {
-      width: 200px;
-      height: 200px;
-    }
-    .Projects-container {
-      display: flex;
-      flex-wrap: wrap;
-    }
-    .Projects-sections {
-      width: 80%;
-    }
-    .test_footer {
-      display: flex;
-      flex-wrap: wrap;
-    }
-    .footer-sections {
-       display: flex;
-      flex-wrap: wrap;
-    }
-    .navbar-nav {
-      --bs-nav-link-padding-x: 0;
-      --bs-nav-link-padding-y: 0.5rem;
-      --bs-nav-link-font-weight: ;
-      --bs-nav-link-color: var(--bs-navbar-color);
-      --bs-nav-link-hover-color: var(--bs-navbar-hover-color);
-      --bs-nav-link-disabled-color: var(--bs-navbar-disabled-color);
-      display: unset;
-      padding-left: 0;
-      margin-bottom: 0;
-      list-style: none;
-  }
+  .fixed-top { position: fixed;}
+  .GeneralSection { width: unset; height: unset; flex-wrap: unset;}
+  .myPhoto {text-align: center;}
+  .myphoto {width: 200px;height: 283px;margin-top: 80px;}
+  .animated-section { width: 95%; height: auto; display: flex; flex-direction: column;}
+  .animated-section .a1 {position: static; width: 100%; height: auto;}
+  .animated-section .a1 img { width: 100%; height: auto; border: 1px solid rgb(163, 172, 172); border-radius: 40%;}
+  .animated-section .a2 {width: 100%;}
+  .animated-section .a2 p { font-size: 1.2em; padding: 20px;}
+  .Experience { display: flex; flex-direction: column;}
+  .sidebar1 center p{margin-top: unset;}
+  .sidebar2 , .sidebar3 , .sidebar4 , .sidebar6{font-size: medium;}
+  .button {padding: unset; font-size: unset;}
+  .Volunteering-container { font-size: 20px; display: flex; flex-direction: column;}
+  .Volunteering-container * {font-size: inherit !important;}
+  .Volunteering-sections , .Projects-sections {width: 80%;}
+  .skills-container { display: flex; flex-wrap: wrap;}
+  .skills-sections {width: 200px; height: 200px;}
+  .Projects-container , .test_footer , .footer-sections {display: flex;flex-wrap: wrap; }
+  .navbar-nav {
+    --bs-nav-link-padding-x: 0;
+    --bs-nav-link-padding-y: 0.5rem;
+    --bs-nav-link-font-weight: ;
+    --bs-nav-link-color: var(--bs-navbar-color);
+    --bs-nav-link-hover-color: var(--bs-navbar-hover-color);
+    --bs-nav-link-disabled-color: var(--bs-navbar-disabled-color);
+    display: unset;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;}
 }
